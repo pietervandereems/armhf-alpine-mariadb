@@ -1,0 +1,12 @@
+mysql:
+  image: pietervandereems/armhf-alpine-mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: OneTwoThreeFourFiveSixNDSFSDkldlkjg9
+    MYSQL_DATABASE: ncone
+    MYSQL_USER: ncuserone
+    MYSQL_PASSWORD: AndAOneAndATwoDSDkjdlfkjf9jlkjsdf
+  expose:
+    - "3306"
+  volumes:
+    - /mnt/mariadb:/var/lib/mysql
+  restart: always
